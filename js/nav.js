@@ -45,13 +45,13 @@
 			}
 
 			else if (($(this).scrollTop() > bluToggle.offsetTop - 350) && $(this).scrollTop() < bluToggle.offsetTop + (bluToggle.offsetHeight) - 350) { // Set position from top to add class
-				$('body').css('background', '#5AD9FF'), $('body').css('color', '#FFFFFF')
+				$('body').css('background', '#0096ff'), $('body').css('color', '#FFFFFF')
 				$('header').addClass('header-blu'), $('header').removeClass('header-wht')
 				$(".logo-white").fadeIn(300)
 				$(".logo-dark").fadeOut(0)
 			}
 			else {
-				$('body').css('background', '#323232'), $('body').css('color', '#DDDDDD')
+				$('body').css('background', '#232323'), $('body').css('color', '#DDDDDD')
 				$(".logo-white").fadeIn(300)
 				$('.navbar-fixed').css('background', 'rgba(50,50,50,0.46)')
 				$(".logo-dark").fadeOut(0)
