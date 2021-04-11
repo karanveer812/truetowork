@@ -39,7 +39,7 @@
 			if (($(this).scrollTop() > whtToggle.offsetTop - 350) && $(this).scrollTop() < (whtToggle.offsetTop + whtToggle.offsetHeight)) { // Set position from top to add class
 				$('body').css('background', '#FFFFFF'), $('body').css('color', '#848484')
 				$('header').addClass('header-wht'), $('header').removeClass('header-blu')
-				// $('.navbar-fixed').css('background', 'rgba(50,50,50,0.46)')
+				$('.navbar-fixed').css('background', 'rgba(255, 255, 255, 0.50)')
 				$(".logo-white").fadeOut(0)
 				$(".logo-dark").fadeIn(300)
 			}
@@ -86,7 +86,7 @@
 			$("#sidemenu_toggle").on("click", function () {
 				$(".pushwrap").toggleClass("active");
 				$(".slider-sec").addClass("push-slider-up");
-				$(".side-menu").addClass("side-menu-active"), $("#close_side_menu").fadeIn(700)
+				$(".side-menu").addClass("side-menu-active"), $("#close_side_menu").fadeIn(700), $("body").css('overflow', 'hidden')
 				$(".logo-white").fadeOut(0)
 				$(".logo-dark").fadeIn(300)
 			}), $("#close_side_menu").on("click", function () {
@@ -97,7 +97,7 @@
 				$(".side-menu").removeClass("side-menu-active"), $("#close_side_menu").fadeOut(200), $(".pushwrap").removeClass("active")
 			}), $("#btn_sideNavClose").on("click", function () {
 				$(".slider-sec").removeClass("push-slider-up");
-				$(".side-menu").removeClass("side-menu-active"), $("#close_side_menu").fadeOut(200), $(".pushwrap").removeClass("active"), $(".logo-white").fadeIn(300), $(".logo-dark").fadeOut(0)
+				$(".side-menu").removeClass("side-menu-active"), $("#close_side_menu").fadeOut(200), $(".pushwrap").removeClass("active"), $(".logo-white").fadeIn(300), $(".logo-dark").fadeOut(0), $("body").css('overflow', 'visible')
 			});
 		}
 	});
